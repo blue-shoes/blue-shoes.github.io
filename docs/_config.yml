@@ -20,7 +20,7 @@
 
 version: 1.0.0
 title: "Ottoneu Toolbox"
-email: adam.m.scharf@gmail.com
+email: ottoneu.toolbox@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   The official home of the Ottoneu Toolbox - a Python application for creating and using fantasy baseball value projections.
 url: "https://blue-shoes.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
