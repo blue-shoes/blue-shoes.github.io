@@ -1,0 +1,191 @@
+$font: "Open Sans", sans-serif;
+$font-header: "Roboto Condensed", $font;
+$text-color: #fafafa;
+$text-color-alt: #e7e9ea;
+$background: #242424;
+$background-border: #222222;
+$background-alt: #272727;
+$background-alt-border: #2c2c2c;
+$background-highlight: #2e2e2e;
+$header-line: linear-gradient(to right, rgba(255, 255, 255, 0.15) 0%, transparent 80%) left bottom transparent no-repeat;
+$header-line-center: linear-gradient(to right, transparent 20%, rgba(255, 255, 255, 0.15) 50%, transparent 80%) left bottom transparent no-repeat;
+$container-padding: 2rem;
+$container-padding-half: $container-padding / 2;
+$container-padding-double: $container-padding * 2;
+
+.header-wrapper-toolbox {
+    max-height: 100%;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.container-downloads {
+    padding-top: $container-padding;
+    padding-bottom: $container-padding-half;
+
+    .downloads-repo-container {
+        font-weight: 300;
+        width: 500px;
+        margin-bottom: 20px;
+        float: left;
+
+        .feedback-icon {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            right: 12px;
+            z-index: 4;
+            font-size: 25px;
+            pointer-events: none;
+        }
+
+        #downloads-repo {
+            height: auto;
+            background-color: lighten($background-highlight, 5%);
+            color: $text-color-alt;
+            border: none;
+            border-top: 1px solid lighten($background-highlight, 10%);
+            border-left: 2px solid $background-highlight;
+            box-shadow: none;
+            font-size: 24px;
+            font-weight: 300;
+            padding-left: 15px;
+        }
+
+        span.input-group-text {
+            height: auto;
+            background-color: $background-highlight;
+            color: $text-color-alt;
+            border: none;
+            border-top: 1px solid lighten($background-highlight, 10%);
+            box-shadow: none;
+            font-size: 24px;
+            font-weight: 300;
+            padding-left: 15px;
+        }
+    }
+
+    .downloads-badge {
+        padding: 3px 6px;
+        margin: 0px;
+        font-size: 85%;
+        font-weight: 300;
+        background-color: $background-highlight;
+        color: $text-color-alt;
+        border-radius: 3px;
+
+        i {
+            margin-right: 6px;
+        }
+    }
+
+    .total-downloads {
+        display: none;
+        font-size: 16px;
+        font-weight: 300;
+        float: right;
+        text-align: center;
+        margin-top: -5px;
+
+        .total-downloads-label {
+            font-size: 20px;
+            margin-bottom: 3px;
+        }
+    }
+
+    .table-downloads {
+        display: none;
+        background-color: $background;
+        border-radius: 8px;
+
+        th {
+            border: none;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        td {
+            border: none;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        .downloads-release-name {
+            width: 50%;
+        }
+
+        .downloads-release-info {
+            background-color: darken($background-alt, 0.5%);
+
+            .fa {
+                margin-right: 10px;
+            }
+
+            .fa:before {
+                content: "\f078";
+            }
+
+            &.collapsed .fa:before {
+                content: "\f054";
+            }
+
+            &:hover {
+                background-color: $background-highlight;
+                cursor: pointer;
+            }
+
+            .badge {
+                font-weight: 400;
+                padding: 5px;
+                margin-left: 8px;
+                background-color: transparent;
+                border-radius: 4px;
+                float: right;
+            }
+
+            .badge-warning {
+                border: 1px solid #d29922;
+                color: #d29922;
+            }
+
+            .badge-success {
+                border: 1px solid #3fb950;
+                color: #3fb950;
+            }
+        }
+
+        .downloads-assets {
+            background-color: $background;
+
+            td {
+                padding: 0px;
+            }
+
+            .downloads-assets-container {
+                a {
+                    text-decoration: none;
+                }
+
+                .downloads-asset-info {
+                    margin: 8px;
+
+                    div {
+                        background-color: darken($background-alt, 0.5%);
+                        padding: 10px 15px;
+                        border-radius: 8px;
+                    }
+
+                    div:hover {
+                        background-color: $background-alt;
+                        text-shadow: none;
+                    }
+
+                    .downloads-badge {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,7 @@
 - name: Home
   link: /
+- name: Downloads
+  link: /downloads.html
 - name: About
   link: /about.html
 - name: Archive
